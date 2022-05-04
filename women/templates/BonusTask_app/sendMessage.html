@@ -1,0 +1,38 @@
+{% extends 'BonusTask_app/base.html' %}
+{%load static%}
+
+{%block title%}
+
+Send Message
+{%endblock%}
+{%block content%}
+<link rel="stylesheet" href="{% static 'BonusTask_app/css/style.css' %}">
+<div align="center"><img src="https://avatars.mds.yandex.net/i?id=4086a27e0726a9bdab6eae7c7d78808f-5875850-images-thumbs&n=13&exp=1"></div>
+<div style="margin-top:100px;">
+
+
+  <div class="container text-center">
+    <div style="display:flex">
+    <div id="form_container">
+
+<h1 style="
+font-family: 'Mulish';
+font-style: normal;
+margin-bottom:50px;
+line-height: 19px;" class="text-center">Отправкa сообщений</h1>
+
+      <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div  class="form-actions form-group ">
+          <button type="submit" class="btn btn-success">Отправить</button>
+        </div>
+      </form>
+    </div>
+      <div style="width:100px"></div>
+    <div>    <img  width="500px"height="450px" src="https://avatars.mds.yandex.net/i?id=c8946f1536c3a479dead8b5ccd42a2f1-5885375-images-thumbs&n=13&exp=1">
+</div>
+    </div>
+  </div>
+  </div>
+{%endblock%}

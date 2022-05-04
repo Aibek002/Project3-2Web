@@ -1,0 +1,5 @@
+
+<form action="{%url 'delete' item.slug%}" method="POST">
+    {%csrf_token%}
+    <input type="submit" name="Confirm">
+</form>

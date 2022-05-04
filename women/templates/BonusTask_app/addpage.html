@@ -1,0 +1,25 @@
+{% extends 'BonusTask_app/base.html' %}
+
+{%load static%}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'BonusTask_app/css/style.css' %}">
+
+
+<div id="diver">
+    <div>
+        <form action="{% url 'add_page' %}" method="post" ENCTYPE="multipart/form-data">
+            {% csrf_token %}
+            {{form.as_p}}
+
+            <input type="submit" value="send">
+        </form>
+    </div><div style="margin-left:160px">
+    <img  width="500px"height="350px" src="https://avatars.mds.yandex.net/i?id=93420b82fa7075db044ba522b092dabb-5743679-images-thumbs&n=13&exp=1">
+    </div>
+   </div>
+
+
+
+
+{% endblock %}
