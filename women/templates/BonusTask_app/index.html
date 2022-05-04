@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Page-1</title>
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;  
+  display: block;
+
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 40px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: rgb(25, 25, 112);
+  color: white;
+    display: block;
+
+  padding: 15px;
+}
+.fa {
+  padding: 70px;
+  font-size: 40px;
+  width:50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 50px 2px;
+}
+
+
+.fa-facebook {
+  background: rgb(25, 25, 112);
+  color: white;
+}
+
+.fa-twitter {
+   background: rgb(25, 25, 112);
+  color: white;
+}
+
+.fa-google {
+   background: rgb(25, 25, 112);
+  color: white;
+}
+.fa-youtube {
+  background: rgb(25, 25, 112);
+
+  color: white;
+}
+
+.fa-instagram {
+  background:  rgb(25, 25, 112);
+  color: white;
+}
+
+.fa-pinterest {
+  background:  rgb(25, 25, 112);
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background:  rgb(25, 25, 112);
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background:  rgb(25, 25, 112);
+  padding-left: 6 00px ;
+  color: white;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: rgb(25, 25, 112);
+  color: white ;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color:  rgb(25, 25, 112);
+}
+
+.aside {
+  background-color: rgb(25, 25, 112);
+  padding: 15px;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+table {
+  font-family: italic;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  color: white;
+  background-color: rgb(25, 25, 112);
+  border: 1px solid;
+  text-align: left;
+  padding: 8px;
+}
+td{
+  border: 1px solid;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: rgb(25, 25, 112);
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Suleyman Demirel University</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 menu">
+    <ul>
+    <li>
+   <p> Suleyman Demirel University is a private university in Kaskelen, Almaty, Kazakhstan. It is named after Suleiman Demirel, former Prime Minister and President of Turkey. </p>
+    <a href=""> Wikipedia </a>
+    <p> Address: Kaskelen </p>
+    <p> Opening hours: until 19:00 Mon-Sat </p>
+    <p> Opens at 9am, Mon </p>
+    <p> Phone: 8 (727) 307 9565 </p>
+    <p> Tuition fees for undergraduate studies: internal payment 850,000 tenge, international tuition fees 2500 US dollars (2017 - 18). </p>
+    <p> Rector: Kuanysh Ergaliev </p>
+    <p> Founded: December 17, 1996 </p>
+
+
+</li>
+    <li>The City is Kaskelen</li>
+    <li>The Street  улица Абылай хана 1/1</li>
+    <li>Suleiman Demirel University (SDU): Suleiman Demirel University; (SDU)</li>
+    </ul>
+  </div>
+
+  <div class="col-6">
+    <div><h1 style="font-style: italic; color: #0d065e;">Suleiman Demirel University</h1></div>
+
+    <iframe style="border-radius:10px" width="100%" height="300px" src="https://www.youtube.com/embed/TZrZAJO4PW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <table>
+       <tr>
+    <th></th>
+    <th >Faculty</th>
+        <th>Email</th>
+  </tr>
+   <tr>
+        <td>№1</td>
+      <td>• Факультет права и социальных наук</td>
+        <td>sdu.stu.edu.kz</td>
+      </tr>
+      <tr>
+        <td>№2</td>
+       <td> • Факультет педагогическиx и гуманитарныx наук</td>
+        
+        <td>sdu.stu.edu.kz</td>
+      </tr>
+      <tr>
+        <td>№3</td>
+        <td>• Факультет инженерии и естественных наук</td>
+     
+        <td>sdu.stu.edu.kz</td>
+      </tr>
+      <tr>
+    <td>№4</td>
+        <td> • Бизнес-школа СДУ</td>
+        
+        <td>sdu.stu.edu.kz</td>
+      </tr>
+      <tr>
+    <td>№5</td>
+        <td>• Центр непрерывного образования</td>
+        
+        <td>sdu.stu.edu.kz</td>
+      </tr>
+    </table>
+  <h2 style="font-style: italic;color:#0d065e  ;">Faculty of Law and Social Sciences</h2>
+    <div style=" height: 20px;width: 100%;"> </div>
+    <table><tr>
+    <th></th> <th >Code Special</th>
+        <th>Specialty Profile subject on UNT</th>
+        <th>Email</th></tr>
+         <tr>
+        
+  
+  
+        <td>№1</td>
+      <td>•5B030100 </td>
+            <td>Юриспруденция ЧОП - История</td>
+              <td>sdu.stu.edu.kz</td>
+      </tr>
+      <tr>
+        <td>№2</td>
+       <td> •5В030200 </td>
+     <td>Международное право  ЧОП - История</td>
+        <td>sdu.stu.edu.kz</td>
+      </tr>
+      <tr>
+        <td>№3</td>
+         <td>•5B020300</td>
+     
+       <td>История  История - География</td>
+     
+        <td>sdu.stu.edu.kz</td>
+      </tr>
+      <tr>
+    <td>№4</td>
+        <td> •5В020200</td>
+  
+            <td>Международные отношения Английский язык - История</td>
+        
+        <td>sdu.stu.edu.kz</td>
+      </tr>
+      <tr>
+    <td>№5</td>
+        <td>•5В050400</td>
+  
+  
+    <td>Журналистика  Творческий экзамен</td>
+        
+        <td>sdu.stu.edu.kz</td>
+      </tr>
+      
+    </table>
+   <div><h2 style="font-style: italic; color: #0d065e;">Faculty of Pedagogical and Humanitarian Sciences</h2></div> 
+      <table>
+      <tr>
+    
+      <th></th>
+      <th>Код специальности </th>
+      <th>Специальность Профильный предмет на ЕНТ, КТА</th>
+
+      </tr>  
+      <tr>
+        <td>№1</td>
+        <td>5В011900</td>
+        <td>Иностр. язык: Два ин. языка Английский язык - История</td>
+      </tr>
+      <tr>
+        <td>№2</td>
+        <td>
+          5B020700
+        </td>
+        <td>Переводческое дело  Английский язык - История</td>
+      </tr>
+      <tr>
+        <td>№3</td>
+        <td>5B021000</td>
+  
+        <td>Иностранная филология Английский язык - История</td>
+
+      </tr>
+      <tr>
+        <td>№4</td>
+        <td>5В020500</td>
+        <td>Филология Яз.обуч. и литература - История</td>
+      </tr>
+      <tr>
+        <td>№5</td>
+        <td>5B011700</td>
+        <td>Казахский язык и литература Яз.обуч. и литература - История</td>
+      </tr>
+      <tr>
+        <td>№6</td>
+        <td>5B012500</td>
+        <td>Химия — Биология (пед.) Химия - Биология</td>
+      </tr>
+      <tr>
+        <td>№7</td>
+        <td>5B010900</td>
+        <td>Математика (пед.) Физика - Математика</td>
+      </tr>
+      <tr>
+        <td>№8</td>
+        <td>5B012800</td>
+        <td>Физика — Информатика (пед.) Физика - Математика</td>
+      </tr>
+</table>
+  
+<div><h2 style="font-style: italic; color: #0d065e;">Faculty of Engineering and Natural Sciences</h2></div>
+<table><tr style="background-color:#0d065e;color: white;">
+      <th></th>
+      <th>Код специальности </th>
+      <th>Специальность 
+      </th><th>Профильный предмет на ЕНТ, КТА</th>
+
+  </tr>
+      <tr>
+        <td>№1</td>
+        <td>5B060100  </td>
+        <td>Математика (науч.)</td>
+        <td>Физика-Матиматика</td>
+      </tr>
+      <tr>
+        <td>№2</td>
+        <td>
+          5B070300
+        </td>
+        <td>Информационные системы</td>
+        <td>  Физика - Математика</td>
+      </tr>
+      <tr>
+        <td>№3</td>
+        <td>5B021000</td>
+  
+        <td>Математика и компьютерное моделирование</td>
+    
+        <td>Физика - Математика</td>
+
+
+      </tr>
+      <tr>
+        <td>№4</td>
+        <td>5B070400</td>
+        <td>Выч. тех. и прог. обеспечение</td>
+
+        <td>Физика - Математика</td>
+      </tr></table>
+
+
+
+
+<h2 style="font-style:italic; color: #0d065e;">SDU Business School</h2>
+<div></div>
+<table>
+    <tr>
+      <th></th>
+      <th>Код специальности </th>
+      <th>Специальность 
+      </th><th>Профильный предмет на ЕНТ, КТА</th>
+
+  </tr>
+      <tr>
+        <td>№1</td>
+        <td>5B060100  </td>
+        <td>Математика (науч.)</td>
+        <td>Физика-Матиматика</td>
+      </tr>
+      <tr>
+        <td>№2</td>
+        <td>
+          5B070300
+        </td>
+        <td>Информационные системы</td>
+        <td>  Физика - Математика</td>
+      </tr>
+      <tr>
+        <td>№3</td>
+        <td>5B021000</td>
+  
+        <td>Математика и компьютерное моделирование</td>
+    
+        <td>Физика - Математика</td>
+
+
+      </tr>
+      <tr>
+        <td>№4</td>
+        <td>5B070400</td>
+        <td>Выч. тех. и прог. обеспечение</td>
+
+        <td>Физика - Математика</td>
+      </tr>
+
+</table>
+  </div>
+
+  <div class="col-3 right">
+    <div class="aside">
+      <h2>Where?</h2>
+      <p><a href="file:///C:/Users/Lenovo/OneDrive/Рабочий%20стол/LabWorkInWeb/Progect2/index1.html">Where is Sdu?</a>
+      </p>
+      <h2>What new news?</h2>
+      <p><a href="file:///C:/Users/Lenovo/OneDrive/Рабочий%20стол/LabWorkInWeb/Progect2/index2.html">What new university news?</a></p>
+      <h2> University Video Review</h2>
+      <p><a href="file:///C:/Users/Lenovo/OneDrive/Рабочий%20стол/LabWorkInWeb/Progect2/index3.html">Video of Sdu</a></p>
+      <h2>About Author</h2>
+      <p><a href="file:///C:/Users/Lenovo/OneDrive/Рабочий%20стол/LabWorkInWeb/Progect2/index4.html">Where he has born?</a></p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <a style="padding-right:110px" href="https://instagram.com/sdukz?utm_medium=copy_link" class="fa fa-facebook"></a>
+<a style="padding-right:110px"href="https://instagram.com/sdukz?utm_medium=copy_link" class="fa fa-twitter"></a>
+<a style="padding-right:110px"href="https://instagram.com/sdukz?utm_medium=copy_link" class="fa fa-google"></a>
+<a style="padding-right:110px"href="https://youtube.com/channel/UCAfCFHbt7ooyttq75uC0FuA" class="fa fa-youtube"></a>
+<a style="padding-right:110px" href="https://instagram.com/sdukz?utm_medium=copy_link" class="fa fa-instagram"></a>
+
+<a href="#" class="fa fa-skype"></a>
+</div>
+
+</body>
+</html>
+
+
