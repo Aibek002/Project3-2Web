@@ -1,8 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+{%block link%}<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Page-3 What News?</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -20,6 +17,7 @@ th {
   padding: 8px;
 }
 td{
+color:white;
   border: 1px solid;
   text-align: left;
   padding: 8px;
@@ -83,7 +81,7 @@ td{
 
 .row::after {
   content: "";
-  clear: both;  
+  clear: both;
   display: block;
 
 }
@@ -161,17 +159,45 @@ a{
     width: 100%;
   }
 }
-</style>
-</head>
-<body>
+</style>{%endblock%}
 
-<div class="flex-container">
+{%block content%}
+     <div class="flex-container">
    <h1>Suleyman Demirel University New News</h1>
 </div>
 
 <div class="row">
   <div class="col-3 menu">
        <ul>
+               <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+      <li class="nav-item">
+        <a href="{%url 'home'%}" class="nav-link active py-3 border-bottom" aria-current="page" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
+          <svg class="bi" width="24" height="24" role="img" aria-label="Home"><use xlink:href="Home"></use></svg>
+Home
+        </a>
+      </li>
+      <li>
+        <a href="{%url 'page1'%}" class="nav-link py-3 border-bottom" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Dashboard">
+          <svg class="bi" width="24" height="24" role="img" aria-label="Dashboard"><use xlink:href=""></use></svg>Page2
+        </a>
+      </li>
+      <li>
+        <a href="{%url 'page2'%}" class="nav-link py-3 border-bottom" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Orders">
+          <svg class="bi" width="24" height="24" role="img" aria-label="Orders"><use xlink:href=""></use></svg>Page3
+        </a>
+      </li>
+      <li>
+        <a href="{%url 'page3'%}" class="nav-link py-3 border-bottom" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Products">
+          <svg class="bi" width="24" height="24" role="img" aria-label="Products"><use xlink:href=""></use></svg>Page4
+        </a>
+      </li>
+      <li>
+        <a href="{%url 'page4'%}" class="nav-link py-3 border-bottom" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Customers">
+          <svg class="bi" width="24" height="24" role="img" aria-label="Customers"><use xlink:href=""></use></svg>
+          Page5
+        </a>
+      </li>
+    </ul>
     <li>
       <table>
         <tr>
@@ -196,7 +222,7 @@ a{
        <tr> <td> Rector: Kuanysh Ergaliev</td></tr>
          <tr> <td>Founded: December 17, 1996 </td>
 </tr>
-         
+
       </table>
 
 </li>
@@ -208,7 +234,7 @@ a{
 
   <div class="col-6">
    <img src="img\pisatel.jpg" width="100%" height="300px">
- 
+
  <h1 style="font-style: italic; color: #0d065e;">Писатель Анатолий Некрасов посетил СДУ</h1>
 <p style="font-style: italic;">Университет имени Сулеймана Демиреля посетили известный исследователь, психолог, философ, член Союза писателей России, академик Европейской академии естественных наук, ведущий специалист в области семейных и межличностных отношений Анатолий Некрасов и психолог, семейный коуч-тренер Асхат Абжанов. Гостей приветствовали ректор СДУ Давронжон Гаипов и Проректор по социальным вопросам Малик Сатаев, которые рассказали о возможностях для обучающихся и ответили на интересующие вопросы. В свою очередь гости выразили свои пожелания и пообещали подарить книги библиотеке.
 
@@ -262,7 +288,7 @@ a{
 </div>
 
 <div class="footer">
-<h1>Нужна помощь? Свяжитесь с нами: +7 (727) 307 95 65</h1>
+<h1 style="color:white">Нужна помощь? Свяжитесь с нами: +7 (727) 307 95 65</h1>
 <div style="width:100%"></div>
 
 <a style="padding-right:110px" href="#" class="fa fa-facebook"></a>
@@ -272,9 +298,8 @@ a{
 <a style="padding-right:110px" href="#" class="fa fa-instagram"></a>
 
 <a href="#" class="fa fa-skype"></a>
-</div>
+</div>   {%endblock%}
 
-</body>
-</html>
+
 
 
